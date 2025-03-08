@@ -41,7 +41,7 @@ jobs:
         uses: mavrosxristoforos/get-xml-info@2.0
         with:
           xml-file: 'extension.xml'
-          xpath: '//properties//name'
+          xpath: '//name'
 
       - name: Format Extension Name
         id: removenameprefix
@@ -90,7 +90,7 @@ jobs:
         uses: mavrosxristoforos/get-xml-info@2.0
         with:
           xml-file: 'extension.xml'
-          xpath: '//properties//author'
+          xpath: '//author'
 
       - name: Format author name
         id: removeauthorprefix
